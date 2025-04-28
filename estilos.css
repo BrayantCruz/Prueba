@@ -214,3 +214,21 @@ footer {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+  .galeria {
+    justify-content: center;
+  }
+
+  .producto {
+    width: 45%; /* Dos productos por fila */
+  }
+}
+
+@media (max-width: 480px) {
+  .producto {
+    width: 100%; /* Un producto por fila en teléfonos muy pequeños */
+  }
+}
+
