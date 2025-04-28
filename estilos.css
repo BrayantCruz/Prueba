@@ -232,3 +232,19 @@ footer {
   }
 }
 
+
+@media (max-width: 768px) {
+  nav ul {
+    justify-content: center; /* Centrar el menú */
+    gap: 0.5rem; /* Reducir el espacio entre los botones */
+  }
+
+  #user-icon {
+    margin-right: 10px; /* Separarlo un poquito de la esquina */
+  }
+
+  .logo img {
+    height: 50px; /* Hacer el logo un poco más pequeño en móvil */
+  }
+}
+
