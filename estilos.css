@@ -242,9 +242,10 @@ footer {
   #user-icon {
     margin-right: 10px; /* Separarlo un poquito de la esquina */
   }
-
-  .logo img {
-    height: 50px; /* Hacer el logo un poco más pequeño en móvil */
-  }
 }
 
+@media (max-width: 768px) {
+  .logo img {
+    display: none;
+  }
+}
