@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Cake Sweet</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="imagenes/Logo.jpg" alt="Dulce Encanto Logo" style="height: 60px;">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="#" id="carrito-icon">🛒 <span class="cart-count">0</span></a></li>
+        <li id="user-section">
+          <a href="login.html" id="user-icon">👤</a>
+          <span id="user-name" style="margin-left: 5px; display:none;"></span>
+          <div id="user-dropdown" style="display: none; position: absolute; background: #fff; border: 1px solid #ccc; padding: 10px;">
+            <button id="cerrar-sesion" style="background-color: #ffb6c1; border: none; padding: 5px 10px; border-radius: 5px;">Cerrar Sesión</button>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main style="text-align: center; padding: 2rem;">
+    <h2>Iniciar Sesión</h2>
+    <form id="login-form" style="max-width: 400px; margin: auto;">
+      <input type="text" id="nombre" placeholder="Nombre" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;">
+      <input type="email" id="correo" placeholder="Correo electrónico" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;">
+      <input type="password" id="contraseña" placeholder="Contraseña" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;">
+      <button type="submit">Ingresar</button>
+    </form>
+    <p style="margin-top: 1rem;">¿No tienes cuenta? <a href="#">Regístrate</a></p>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Sobre Nosotros</h3>
+        <p>Somos Cake Sweet, llevando dulzura a tu vida desde 2024.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p>Email: contacto@CakeSweet.com</p>
+        <p>Tel: 55 1234 5678</p>
+      </div>
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Cake Sweet. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
