@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cake Sweet</title>
+  <link rel="stylesheet" href="estilos.css" />
+<!-- Recuerda en el <head> de CADA página agregar esto para los iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="imagenes/Logo.jpg" alt="Dulce Encanto Logo" style="height: 60px;">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="#">🛒 <span class="cart-count">0</span></a></li>
+        <li id="user-section">
+          <a href="login.html" id="user-icon">👤</a>
+          <span id="user-name" style="margin-left: 5px; display: none;"></span>
+          <div id="user-dropdown" style="display: none; position: absolute; background: #fff; border: 1px solid #ccc; padding: 10px;">
+            <button id="cerrar-sesion" style="background-color: #ffb6c1; border: none; padding: 5px 10px; border-radius: 5px;">Cerrar Sesión</button>
+          </div>
+        </li>
+        
+       <!-- <li><a href="login.html">👤</a></li>-->
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>¡Bienvenido a Cake Sweet!</h1>
+      <p>Descubre nuestros deliciosos postres artesanales.</p>
+    </section>
+    <section class="productos">
+      <h2>Conoce algunos de nuestros productos</h2>
+      <div class="galeria">
+        <div class="producto">
+          <img src="imagenes/fresa.png" alt="Pastel de Fresa">
+          <h3>Pastel de Fresa</h3>
+          <select class="opciones-precio">
+            <option value="250">Chico - $250.00</option>
+            <option value="320">Mediano - $320.00</option>
+            <option value="400">Grande - $400.00</option>
+          </select>
+          <button>Añadir al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="imagenes/PastelMango.jpg" alt="Pastel de Fresa">
+          <h3>Pastel De Mango</h3>
+          <select class="opciones-precio">
+            <option value="250">Chico - $250.00</option>
+            <option value="320">Mediano - $320.00</option>
+            <option value="400">Grande - $400.00</option>
+          </select>
+          <button>Añadir al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="imagenes/choco.png" alt="Pastel de Fresa">
+          <h3>Pastel De Chocolate</h3>
+          <select class="opciones-precio">
+            <option value="250">Chico - $250.00</option>
+            <option value="320">Mediano - $320.00</option>
+            <option value="400">Grande - $400.00</option>
+          </select>
+          <button>Añadir al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="imagenes/coco.png" alt="Pastel de Fresa">
+          <h3>Pastel De Coco</h3>
+          <select class="opciones-precio">
+            <option value="250">Chico - $250.00</option>
+            <option value="320">Mediano - $320.00</option>
+            <option value="400">Grande - $400.00</option>
+          </select>
+          <button>Añadir al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="imagenes/PastelZarzamora.jpg" alt="Pastel de Fresa">
+          <h3>Pastel De Zarzamora</h3>
+          <select class="opciones-precio">
+            <option value="250">Chico - $250.00</option>
+            <option value="320">Mediano - $320.00</option>
+            <option value="400">Grande - $400.00</option>
+          </select>
+          <button>Añadir al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="imagenes/CupcakeMango.jpg" alt="Cupcake Vainilla">
+          <h3>Cupcake De Mango</h3>
+          <select class="opciones-precio">
+            <option value="20">1 pieza - $20.00</option>
+            <option value="40"> 2 pieza - $40.00</option>
+            <option value="60">3 piezas - $60.00</option>
+          </select>
+          <button>Añadir al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="imagenes/CupcakeArandanos.jpg" alt="Cupcake Vainilla">
+          <h3>Cupcake  De Arandanos</h3>
+          <select class="opciones-precio">
+            <option value="20">1 pieza - $20.00</option>
+            <option value="40"> 2 pieza - $40.00</option>
+            <option value="60">3 piezas - $60.00</option>
+          </select>
+          <button>Añadir al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="imagenes/CupcakeChocolate.jpg" alt="Cupcake Vainilla">
+          <h3>Cupcake De Chocolate</h3>
+          <select class="opciones-precio">
+            <option value="20">1 pieza - $20.00</option>
+            <option value="40"> 2 pieza - $40.00</option>
+            <option value="60">3 piezas - $60.00</option>
+          </select>
+          <button>Añadir al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="imagenes/cuporeo.png" alt="Cupcake Vainilla">
+          <h3>Cupcake De Oreo</h3>
+          <select class="opciones-precio">
+            <option value="20">1 pieza - $20.00</option>
+            <option value="40"> 2 pieza - $40.00</option>
+            <option value="60">3 piezas - $60.00</option>
+          </select>
+          <button>Añadir al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="imagenes/cupframbuesa.png" alt="Cupcake Vainilla">
+          <h3>Cupcake De Frambuesa</h3>
+          <select class="opciones-precio">
+            <option value="20">1 pieza - $20.00</option>
+            <option value="40"> 2 pieza - $40.00</option>
+            <option value="60">3 piezas - $60.00</option>
+          </select>
+          <button>Añadir al carrito</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Sobre Nosotros</h3>
+          <p>Somos Cake Sweet, llevando dulzura a tu vida desde 2024.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Contacto</h3>
+          <p>Email: contacto@CakeSweet.com</p>
+          <p>Tel: 55 1234 5678</p>
+        </div>
+        <div class="footer-section">
+          <h3>Síguenos</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2025 Cake Sweet. Todos los derechos reservados.
+      </div>
+    </footer>
+    
+  </footer>
+
+  <!-- Modal del carrito -->
+  <div id="modal-carrito" class="modal-carrito">
+    <div class="modal-contenido">
+      <h2>Tu carrito</h2>
+      <ul id="lista-carrito"></ul>
+      <p id="total-carrito">Total: $0.00</p>
+      <button id="finalizar-compra">Finalizar compra</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <a href="https://wa.me/529612348133?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20postres" 
+   class="whatsapp-float" target="_blank" title="Chatea con nosotros">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+</a>
+
+<style>
+  .whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    z-index: 100;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+  }
+
+  .whatsapp-float img {
+    width: 35px;
+    height: 35px;
+  }
+</style>
+</body>
+</html>
