@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Cake Sweet</title>
+  <link rel="stylesheet" href="estilos.css">
+  <!-- Recuerda en el <head> de CADA página agregar esto para los iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<style>
+  .form-container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff0f5;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #c94f7c;
+  }
+
+  .form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+
+  .form-container input,
+  .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffccd5;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+
+  .form-container button {
+    background-color: #c94f7c;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .form-container button:hover {
+    background-color: #b23e6d;
+  }
+</style>
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="imagenes/Logo.jpg" alt="Dulce Encanto Logo" style="height: 60px;">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="#">🛒 <span class="cart-count">0</span></a></li>
+        <li><a href="login.html">👤</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contacto" style="padding: 2rem; text-align: center;">
+    <div class="form-container">
+      <h2>Contáctanos</h2>
+      <form action="https://formspree.io/f/mvgagnpw" method="POST">
+        <label for="nombre">Tu nombre:</label>
+        <input type="text" name="nombre" required>
+    
+        <label for="email">Tu correo electrónico:</label>
+        <input type="email" name="email" required>
+    
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" rows="5" required></textarea>
+    
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Sobre Nosotros</h3>
+          <p>Somos Cake Sweet, llevando dulzura a tu vida desde 2024.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Contacto</h3>
+          <p>Email: contacto@CakeSweet.com</p>
+          <p>Tel: 55 1234 5678</p>
+        </div>
+        <div class="footer-section">
+          <h3>Síguenos</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2025 Cake Sweet. Todos los derechos reservados.
+      </div>
+    </footer>
+    
+  </footer>
+</body>
+</html>
